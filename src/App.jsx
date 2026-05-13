@@ -7,7 +7,7 @@ export default function App() {
   // Metadata Teknis (Sesuaikan deskripsi agar pas dengan target audiens/recruiter)
   const siteTitle = "Rasyid.dev | IT Portfolio";
   const siteDescription = "Portofolio profesional Rasyid, S1 Teknik Informatika. Frontend Developer dengan fokus pada React Ecosystem, Clean Code, dan Technical Marketing.";
-  const siteUrl = "https://rasyid-portfolio.vercel.app"; 
+  const siteUrl = "https://rasyid-portfolio-ruby.vercel.app/"; 
   const siteImage = `${siteUrl}/og-image.png`; // Pastikan og-image.png sudah ada di folder /public
 
   return (
