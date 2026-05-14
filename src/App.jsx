@@ -17,7 +17,7 @@ export default function App() {
         <title>{siteTitle}</title>
         <meta name="description" content={siteDescription} />
 
-        {/* Open Graph / WhatsApp / LinkedIn / Facebook */}
+        {/* Open Graph / WhatsApp / LinkedIn */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:title" content={siteTitle} />
@@ -29,6 +29,30 @@ export default function App() {
         <meta name="twitter:title" content={siteTitle} />
         <meta name="twitter:description" content={siteDescription} />
         <meta name="twitter:image" content={siteImage} />
+
+        {/* DATA TERSTRUKTUR (JSON-LD) UNTUK GOOGLEBOT */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Abdul Rasyid",
+            "url": "https://rasyid-portfolio-ruby.vercel.app/",
+            "jobTitle": "Frontend Developer",
+            "alumniOf": {
+              "@type": "EducationalOrganization",
+              "name": "Universitas Islam Kalimantan Muhammad Arsyad Al Banjari"
+            },
+            "knowsAbout": [
+              "React",
+              "Vite",
+              "Tailwind CSS v4",
+              "Laravel",
+              "Filament 3",
+              "Technical SEO",
+              "Parrot OS"
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* KONTEN UI ASLI ANDA (Tetap utuh dengan Tailwind v4) */}
