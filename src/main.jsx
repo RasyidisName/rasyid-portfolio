@@ -6,7 +6,7 @@ import TagManager from 'react-gtm-module'
 
 // Konfigurasi GTM Non-blocking
 const tagManagerArgs = {
-    gtmId: 'GTM-XXXXXXX' // 
+    gtmId: 'GTM-KJN7WLZM' 
 }
 
 TagManager.initialize(tagManagerArgs)
